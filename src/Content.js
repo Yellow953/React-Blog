@@ -1,36 +1,16 @@
-import { useState, useEffect } from 'react';
 import ArticleList from './ArticleList';
+import useFetch from './useFetch';
 
 const Content = () => {
-    const [articles, setArticles] = useState(null);
-    const [isLoading, setIsLoading] = useState(true);
-    const [error, setError] = useState(null);
+    const {data:articles, isLoading, error } = useFetch('http://localhost:8000/articles');    
 
     const handleArticleDelete = (id) => {
-        const newArticle = articles.filter(article => article.id !== id);
-        setArticles(newArticle);
+        
     }
 
     const handleArticleShow = (id) => {
 
     }
-
-    useEffect(() => {
-        fetch('http://localhost:8000/articles')
-            .then(res => {
-                if (!res.ok){
-                    throw new Error("Could not fetch data from this url...");
-                }
-                return res.json();
-            }).then((data) => {
-                setIsLoading(false);
-                setArticles(data);
-                setError(null);
-            }).catch((e) => {
-                setError(e.message);
-                setIsLoading(false);
-            });
-    }, []);
 
     return ( 
     <div className="home">
