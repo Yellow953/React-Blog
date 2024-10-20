@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.navbar{
+  padding:20px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #333;
+}
+
+.navbar h1{
+  color: blue;
+}
+
+.navbar .links{
+  margin-left: auto;
+}
+
+.navbar a{
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: 700;
+}
+
+.navbar a:hover{
+  color: blue;
+}
+
+.content{
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.article-preview{
+  padding: 15px 25px;
+  margin: 20px;
+  border-bottom: 1px solid #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.article-preview:hover{
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.article-preview h2{
+  font-size: 20px;
+  color: blue;
+  margin-bottom: 8px;
+}
+
+.btn{
+  padding: 8px 12px;
+  margin: 0 4px;
+  border-radius: 5px;
+  border: 1px solid #333;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-weight: 700;
+}
+
+.btn:hover{
+  cursor: pointer;
+}
+
+.btn-danger{
+  background-color: red;
+}
+
+.btn-primary{
+  background-color: blue;
+}
+
+.loading{
+  text-align: center;
+  margin: 25px 0;
+}
+
+.error{
+  color: red;
+  font-weight: 700;
+  text-align: center;
+  margin: 25px 0;
+}

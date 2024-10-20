@@ -1,0 +1,16 @@
+{
+    "articles": [
+        {
+            "title": "My new website", 
+            "body": "lorem ipsum...", 
+            "author": "mario", 
+            "id": 1
+        },
+        {
+            "title": "Opening Party", 
+            "body": "lorem ipsum...", 
+            "author": "yoshi", 
+            "id": 2
+        }
+    ]
+}
