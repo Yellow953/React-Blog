@@ -71,3 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Run Json Server
 npx json-server --watch data/db.json --port 8000
+
+### Shortcuts
+SFC

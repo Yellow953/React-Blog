@@ -94,3 +94,24 @@
   text-align: center;
   margin: 25px 0;
 }
+
+.container{
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.blog-detail{
+  padding: 25px;
+  border: 1px #333 solid;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.blog-detail h2{
+  color: blue;
+}
+
+.blog-detail h2, .blog-detail h3, .blog-detail p{
+  margin-top: 10px;
+}

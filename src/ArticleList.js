@@ -11,7 +11,7 @@ const ArticleList = ({ articles, title }) => {
                         <p>Written by { article.author }</p>
                     </div>
                     <div className="article-controls">
-                        <Link to="/articles/show" className="btn btn-primary">Show</Link>
+                        <Link to={ `/articles/${article.id}` } className="btn btn-primary">Show</Link>
                         <Link to="/articles/delete" className="btn btn-danger">Delete</Link>
                     </div>
                 </div>
