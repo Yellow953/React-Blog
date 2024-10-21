@@ -1,6 +1,6 @@
-const ArticleList = ({ articles, title, handleArticleDelete, handleArticleShow}) => {
-    // const articles = props.articles;
-    // const title = props.title;
+import { Link } from 'react-router-dom';
+
+const ArticleList = ({ articles, title }) => {
     return ( 
         <div className="articles-list">
             <h2>{ title }</h2>
@@ -11,8 +11,8 @@ const ArticleList = ({ articles, title, handleArticleDelete, handleArticleShow})
                         <p>Written by { article.author }</p>
                     </div>
                     <div className="article-controls">
-                        <button onClick={() => handleArticleShow(article.id)} className="btn btn-primary">Show</button>
-                        <button onClick={() => handleArticleDelete(article.id)} className="btn btn-danger">Delete</button>
+                        <Link to="/articles/show" className="btn btn-primary">Show</Link>
+                        <Link to="/articles/delete" className="btn btn-danger">Delete</Link>
                     </div>
                 </div>
             ))}

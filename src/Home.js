@@ -1,16 +1,8 @@
 import ArticleList from './ArticleList';
 import useFetch from './useFetch';
 
-const Content = () => {
+const Home = () => {
     const {data:articles, isLoading, error } = useFetch('http://localhost:8000/articles');    
-
-    const handleArticleDelete = (id) => {
-        
-    }
-
-    const handleArticleShow = (id) => {
-
-    }
 
     return ( 
     <div className="home">
@@ -18,9 +10,9 @@ const Content = () => {
         
         { isLoading && <h2 className='loading'>Loading...</h2>}
 
-        { articles && <ArticleList articles={articles} title="All Articles" handleArticleDelete={handleArticleDelete} handleArticleShow={handleArticleShow}/> }
+        { articles && <ArticleList articles={articles} title="All Articles" /> }
     </div>
     );
 }
  
-export default Content;
+export default Home;
