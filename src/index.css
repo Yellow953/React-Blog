@@ -150,3 +150,12 @@ input, textarea, select{
   justify-content: space-between;
   align-items: center;
 }
+
+.not-found{
+  text-align: center;
+}
+
+.not-found h2{
+  color: red;
+  margin-bottom: 25px;
+}
