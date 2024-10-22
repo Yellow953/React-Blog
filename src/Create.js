@@ -1,4 +1,5 @@
 import { useState } from "react";
+// import { useHistory } from "react-router-dom/cjs/react-router-dom";
 
 const Create = () => {
     const [ title, setTitle ] = useState('');
@@ -6,6 +7,7 @@ const Create = () => {
     const [ author, setAuthor ] = useState('mario');
     const [ isSending, setIsSending ] = useState(false);
     const [ message, setMessage ] = useState(null);
+    // const history = useHistory();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -23,6 +25,9 @@ const Create = () => {
             setTimeout(() => setMessage(null), 2000);
             setTitle('');
             setBody('');
+
+            // history.go(-1); // go back
+            // history.push('/'); // redirect to home page
         }).catch((e) => {
             setIsSending(false);
             setMessage(e.message);

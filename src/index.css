@@ -144,3 +144,9 @@ input, textarea, select{
   text-align: center;
   font-size: 2rem;
 }
+
+.layout{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
